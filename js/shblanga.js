@@ -89,12 +89,9 @@ function login() {
         if (signUpArray[i].email.toLowerCase() == email.toLowerCase() && signUpArray[i].password.toLowerCase() == password.toLowerCase()) {
             localStorage.setItem('sessionUsername', signUpArray[i].name)
             if (baseURL == '/') {
-                // location.replace('https://' + location.hostname + '/home.html')
-                console.log(location.hostname)
+                location.replace('https://' + location.hostname + '/home.html')
             } else {
-                location.replace(baseURL + '/home.html')
-                // file:///Users/hussein/Desktop/html-course-route/Assignments/smart%20login/home.html
-                // file://users/hussein/Desktop/html-course-route/Assignments/smart%20login/home.html
+                location.replace('https://nothingaroundus.github.io/' + baseURL + '/home.html')
             }
         } else {
             document.getElementById('incorrect').innerHTML = '<span class="p-2 text-danger">incorrect email or password</span>'
