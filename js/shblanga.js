@@ -90,7 +90,7 @@ function login() {
             localStorage.setItem('sessionUsername', signUpArray[i].name)
             if (baseURL == '/') {
                 location.replace('https://' + location.hostname + '/home.html')
-
+                console.log(location.hostname)
             } else {
                 location.replace(baseURL + '/home.html')
                 // file:///Users/hussein/Desktop/html-course-route/Assignments/smart%20login/home.html
