@@ -8,7 +8,6 @@ var baseURL = ''
 for (var i = 0; i < pathparts.length - 1; i++) {
     baseURL += '/' + pathparts[i]
 }
-console.log(baseURL);
 
 var username = localStorage.getItem('sessionUsername')
 if (username) {
