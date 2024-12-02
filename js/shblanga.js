@@ -86,7 +86,7 @@ function login() {
     var password = signinPassword.value
     var email = signinEmail.value
     for (var i = 0; i < signUpArray.length; i++) {
-        if (signUpArray[i].email.toLowerCase() == email.toLowerCase() && signUpArray[i].password.toLowerCase() == password.toLowerCase()) {
+        if (signUpArray[i].email.toLowerCase() == email.toLowerCase() && signUpArray[i].password == password) {
             localStorage.setItem('sessionUsername', signUpArray[i].name)
             if (baseURL == '/') {
                 location.replace('https://nothingaroundus.github.io/' + location.hostname + '/home.html')
